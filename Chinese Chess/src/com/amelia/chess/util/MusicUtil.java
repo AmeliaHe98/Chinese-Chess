@@ -15,7 +15,7 @@ public class MusicUtil {
 
 	public static void playMusic(String str) {
 		try {
-			inputStream = AudioSystem.getAudioInputStream(new File("src/res/" + str + ".wav"));
+			inputStream = AudioSystem.getAudioInputStream(new File("res/" + str + ".wav"));
 			clip = AudioSystem.getClip();
 			clip.open(inputStream);
 				
