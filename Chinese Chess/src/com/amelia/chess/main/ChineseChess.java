@@ -24,7 +24,7 @@ public class ChineseChess extends JFrame {
         this.setCursor(new Cursor(Cursor.HAND_CURSOR));
         this.setTitle("Chinese Chess");
         this.addMouseListener(controller);
-        this.setIconImage(ImageIO.read(new File("src/res/chess.jpg")));
+        this.setIconImage(ImageIO.read(new File("res/chess.jpg")));
         this.setSize(605, 710);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
@@ -37,7 +37,7 @@ public class ChineseChess extends JFrame {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             new ChineseChess();
         }catch ( Exception e ){
-            System.exit(0);
+            e.printStackTrace();
         }
     }
 }
