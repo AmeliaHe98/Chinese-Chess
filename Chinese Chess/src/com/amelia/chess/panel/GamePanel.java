@@ -32,9 +32,9 @@ public class GamePanel extends JPanel {
 			g.setColor(Color.RED);
 			g.setFont(FontUtil.myFont3);
 			if(message == 1){
-				g.drawString("�����ʤ", getWidth()/2-150, getHeight()/2+15);
+				g.drawString("Red loses!", getWidth()/2-150, getHeight()/2+15);
 			}else if(message == 2){
-				g.drawString("�����ʤ", getWidth()/2-150, getHeight()/2+15);
+				g.drawString("Red wins!", getWidth()/2-150, getHeight()/2+15);
 			}
 			message = 0;
 		}
